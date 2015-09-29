@@ -29,7 +29,7 @@ for link in soup.find_all('a'):
         break
     
 # Print video title and prompt for download
-title = soup.find("a", "yt-uix-title-link").text
+title = soup.find("a", "yt-uix-tile-link").text
 print("Found: " + title)
 prompt = raw_input("Download song (y/n)? ")
 if prompt != "y":
